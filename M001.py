@@ -14,6 +14,8 @@ zahl = 2.5
 # print: Schreibt den Inhalt einer Variable in die Konsole
 print(zahl)
 
+##################################################################
+
 # Datentypen
 # int: Ganze Zahlen
 # float: Kommazahlen
@@ -49,6 +51,31 @@ b = False
 # complex: Komplexe Zahlen
 c = 5 + 12j  # j = mathematisches i
 
+##################################################################
+
+# Stringfunktionen
+s = "Hallo Welt"
+
+# Der Punkt Operator: In die Variable hineingreifen
+print(s.count("l"))
+
+# lower(), upper(): Konvertiert den gesamten string zu lowercase oder UPPERCASE
+print(s.lower())
+print(s.upper())
+
+# title(), capitalize(): Erste(r) Buchstabe(n) groß, Rest klein
+s.capitalize()
+s.title()
+
+# islower(), isupper(): Ist der gesamte String lowercase oder UPPERCASE?
+print(s.islower())
+print(s.isupper())
+
+# len(...): Gibt die Länge einer Liste zurück
+print(len(s))  # 10
+
+##################################################################
+
 # Index
 # "An der Stelle"
 # Bei einer Liste bestimmte Elemente entnehmen
@@ -60,6 +87,8 @@ print(text[0])  # [<Zahl>]: Index
 print(text[-3])  # Liste von rechts angreifen
 
 print(text[0:5])  # Bereichsindex (von, bis) [0, 1, 2, 3, 4]
+
+##################################################################
 
 # Arithmetik
 # Berechnungen durchführen (mit Zahlen)
