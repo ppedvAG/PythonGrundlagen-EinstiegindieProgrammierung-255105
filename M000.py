@@ -1,28 +1,34 @@
-list1 = [1, 2, 3, 4]
-list2 = [2, 3, 4, 5, 6]
-list3 = [5, 6, 7, 8]
+for x in range(1, 101):
+	if x % 3 == 0 and x % 5 == 0:
+		print("FizzBuzz")
+	elif x % 3 == 0:
+		print("Fizz")
+	elif x % 5 == 0:
+		print("Buzz")
+	else:
+		print(x)
 
-# if len(list1) > len(list2) and len(list1) > len(list3):
-# 	print("list1 ist die längste Liste")
+for x in range(1, 201):
+	if x % 100 in [11, 12, 13]:
+		print(f"{x}th")
+	elif x % 10 == 1:
+		print(f"{x}st")
+	elif x % 10 == 2:
+		print(f"{x}nd")
+	elif x % 10 == 3:
+		print(f"{x}rd")
+	else:
+		print(f"{x}th")
 
-laengen = [len(list1), len(list2), len(list3)]
+# import time
+for x in range(0, 60):
+	for y in range(0, 60):
+		print(f"{x:02}:{y:02}")
+		# time.sleep(1)
 
-laengen.sort()
+for x in range(0, 3600):
+	print(f"{int(x/60):02}:{(x % 60):02}")
 
-laengste = laengen[-1]  # Höchste Länge am Ende
-
-if len(list1) == laengste:
-	print("list1 ist die längste")
-if len(list2) == laengste:
-	print("list2 ist die längste")
-if len(list3) == laengste:
-	print("list3 ist die längste")
-
-
-list4 = list1 + list2 + list3
-if 3 in list4 or 7 in list4 or 10 in list4:
-	print("...")
-
-intersection = {3, 7, 10}.intersection(list4)
-if len(intersection) > 0:
-	print(intersection)
+for x in range(1, 11):
+	for y in range(1, 11):
+		print(f"{x} x {y} = {x * y}")
