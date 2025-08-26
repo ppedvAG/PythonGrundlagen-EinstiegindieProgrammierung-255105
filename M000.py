@@ -1,23 +1,11 @@
-z1 = 3
-z2 = 5
-z3 = 8
-summe = z1 + z2 + z3
-print(summe)
+list1 = [1, 2, 3, 4]
+list2 = [2, 3, 4, 5, 6]
+list3 = [5, 6, 7, 8]
+list4 = (list1 + list2 + list3)
 
-potenz = summe ** summe
-print(potenz)
+print(list(set(list4)))
 
-print(potenz % 2)
+text = "Hallo Welt"
+print(list(text))
 
-v = "Max"
-n = "Mustermann"
-vn = v + n
-print(vn.lower().count("m"))
-print(vn.count("m") + vn.count("M"))
-
-vorname = "lukas"
-print(vorname.title())
-print(vorname.capitalize())
-print(vorname[0].upper() + vorname[1:].lower())
-
-print(len(v + n + vorname))
+print(list(range(0, 21, 2)))
