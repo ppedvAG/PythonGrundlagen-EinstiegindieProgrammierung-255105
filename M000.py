@@ -1,34 +1,12 @@
-for x in range(1, 101):
-	if x % 3 == 0 and x % 5 == 0:
-		print("FizzBuzz")
-	elif x % 3 == 0:
-		print("Fizz")
-	elif x % 5 == 0:
-		print("Buzz")
-	else:
-		print(x)
+no1 = [x + 12 for x in range(1, 31) if x % 6 == 0]
+print(no1)
 
-for x in range(1, 201):
-	if x % 100 in [11, 12, 13]:
-		print(f"{x}th")
-	elif x % 10 == 1:
-		print(f"{x}st")
-	elif x % 10 == 2:
-		print(f"{x}nd")
-	elif x % 10 == 3:
-		print(f"{x}rd")
-	else:
-		print(f"{x}th")
+text = "Ich bin ein Text"
+no2 = [c.upper() for c in text if c.islower()]
+print(no2)
 
-# import time
-for x in range(0, 60):
-	for y in range(0, 60):
-		print(f"{x:02}:{y:02}")
-		# time.sleep(1)
+no3 = [w[0].upper() for w in text.split(" ")]
+print(no3)
 
-for x in range(0, 3600):
-	print(f"{int(x/60):02}:{(x % 60):02}")
-
-for x in range(1, 11):
-	for y in range(1, 11):
-		print(f"{x} x {y} = {x * y}")
+no4 = [w for w in text.split(" ") if len(w) <= 3]
+print(no4)
