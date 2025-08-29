@@ -98,3 +98,5 @@ p2 = PersonCool("", "")  # Mit optionalen Parametern auch möglich
 
 p.hallo()  # hallo() bezieht sich hier auf das Objekt p; Output: Hallo mein Name ist: Lukas
 p2.hallo()
+
+PersonCool.hallo(p)  # Indirekter Methodenaufruf
